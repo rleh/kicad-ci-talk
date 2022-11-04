@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="36"
+   height="36"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="pklogo.svg"
+   inkscape:export-filename="/home/felicitus/ownCloud/Projects/PartKeepr/PartKeepr Logo with Text for Website Header 2015.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3935">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3937" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="1"
+         id="stop3939" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3935"
+       id="linearGradient3941"
+       x1="156.828"
+       y1="386.38205"
+       x2="671.87634"
+       y2="386.38205"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(6.0630807,-15.157702)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.16625"
+     inkscape:cx="274.35523"
+     inkscape:cy="38.258665"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1596"
+     inkscape:window-height="861"
+     inkscape:window-x="0"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0"
+     inkscape:snap-bbox="false"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-nodes="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-global="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4103"
+       empspacing="2"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       spacingx="5px"
+       spacingy="5px"
+       originx="-18.888359"
+       originy="-611.7685" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="326.11164,-166.7685"
+       id="guide4873" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="247.80279,-66.023591"
+       id="guide4875" />
+    <sodipodi:guide
+       position="6.0630776,55.780332"
+       orientation="0,1"
+       id="guide4700" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-18.888359,-404.59369)">
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="path2985"
+       sodipodi:cx="36.888359"
+       sodipodi:cy="422.59369"
+       sodipodi:rx="18"
+       sodipodi:ry="18"
+       d="M 54.888359,422.59369 A 18,18 0 0 1 36.906271,440.59368 18,18 0 0 1 18.888395,422.62951 18,18 0 0 1 36.834624,404.59377 18,18 0 0 1 54.888216,422.52204"
+       sodipodi:start="0"
+       sodipodi:end="6.2792049"
+       sodipodi:open="true"
+       inkscape:export-filename="/home/felicitus/repos/www.partkeepr.org/images/pklogo.png"
+       inkscape:export-xdpi="27"
+       inkscape:export-ydpi="27" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#003849;stroke-width:3.87694359;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       d="m 31.192605,432.02519 1.036407,-5.08999 c 0.05263,-0.25847 0.247399,-1.21503 0.937956,-2.06773 3.549238,-3.62167 9.263652,-1.11588 10.503914,-7.0579 1.061226,-5.35216 -5.522423,-4.61273 -11.984072,-4.61273 l -0.179142,0"
+       id="path4101"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-xdpi="27"
+       inkscape:export-ydpi="27"
+       inkscape:export-filename="/home/felicitus/repos/www.partkeepr.org/images/pklogo.png" />
+  </g>
+</svg>
