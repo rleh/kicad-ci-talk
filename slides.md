@@ -15,7 +15,7 @@ img[alt~="center"] {
 
 # Continuous Integration mit KiCad
 
-### _Oder auch:_ Dumme Fehler und nerviges Aufgaben vermeiden
+### _Oder auch:_ Dumme Fehler und nervige Aufgaben vermeiden
 ### _Oder auch:_ Automatisierte Hilfe beim PCB-Review
 
 ---
@@ -26,15 +26,14 @@ img[alt~="center"] {
 
 **Raphael Lehmann**
 
-👩‍🎓 _Elektrotechnik, Informationstechnik & technische Informatik_ @ RWTH Aachen
-
-💌 raphael@rleh.de
-
-🦜 [@rleh_de](https://twitter.com/rleh_de)
-
+👩‍🎓 [_Elektrotechnik, Informationstechnik & technische Informatik_ @ RWTH Aachen](#)
 🤖 [Roboterclub Aachen e.V.](https://www.roboterclub.rwth-aachen.de/)
-
 💫 [TechAachen e.V.](https://techaachen.de/)
+
+Kontakt
+💌 raphael@rleh.de
+🦜 [@rleh_de](https://twitter.com/rleh_de)
+![invert h:25](img/Octicons-mark-github.svg) [@rleh](https://github.com/rleh/)
 
 ---
 
@@ -42,27 +41,29 @@ img[alt~="center"] {
 
 ![bg right:40%](img/TechTurbo_Julia.jpg)
 
-## PCB Design Prozess
+# PCB Design Prozess
 
 1. ✏️ Schaltplan
 2. 👀 Review
 3. ✍️ Layout
 4. 👀 Review
 5. 🩹 Anmerkungen aus Reviews umsetzen
-6. Fertigungsdaten vorbereiten
+6. ⚙️ Fertigungsdaten vorbereiten
 7. 💥 Fehler in Fertigungsdaten oder Bauteile nicht lieferbar
-8. 🔁 Iterieren
-9. 🔁 ...
+8. 🔁 Nächste Iteration
+9. 🔝 ...
 10. 💾 Projekt archivieren
 
 ---
 
-## Wer kennt es nicht?
+# Wer kennt es nicht?
 
 - Unterschiedliche Titel, Revision, Datum auf verschiedenen Schaltplanseiten
 - Uneindeutige Bezeichnungen
-- (Weitere nervige Review-Probleme ...)
-- DRC-Check Fehler
+- DRC Errors
+- Falsche oder keine KiCad-Version installiert
+- Outdated PDFs von Schaltplan und Dokumentation
+<!-- weitere ...-->
 
 ![bg left h:300](img/kicad-error-lib-absolute-path.png)
 
@@ -79,17 +80,19 @@ img[alt~="center"] {
 
 ---
 
-![bg w:600 right:45%](img/kibot_workflow.png)
+![bg w:580 right:45%](img/kibot_workflow.png)
 
 # KiBot 
 
 https://github.com/INTI-CMNB/KiBot
 
-- 🚧 Under development, aber funktioniert gut!
-- Enthalten im docker image `ghcr.io/rleh/kicad6_and_pandoc`
-- Nutzt coole KiCad plugins
-  - [🔗](https://github.com/openscopeproject/InteractiveHtmlBom) Interactive HTML BOM
-  - [🔗](https://github.com/SchrodingersGat/KiBoM) KiBoM
+🚧 Under development, funktioniert gut!
+
+🚢 Enthalten im Docker image `ghcr.io/rleh/kicad6_and_pandoc`
+
+🏳️‍🌈 Nutzt coole KiCad plugins
+- [🔗](https://github.com/openscopeproject/InteractiveHtmlBom) Interactive HTML BOM
+- [🔗](https://github.com/SchrodingersGat/KiBoM) KiBoM
 
 ---
 <!-- _class: non-inverted -->
@@ -176,7 +179,7 @@ exit $return_code
 ---
 <!-- _class: non-inverted -->
 
-![h:100](img/kibot_740x400_logo.png)
+# KiBot
 
 ```yaml
 - name: Print schematic
@@ -197,24 +200,46 @@ exit $return_code
       (cd pcbs/$P/gerber && zip ../gerber.zip *)
     done
 ```
+---
+
+KiBot Export Möglichkeiten
+- PDF von Schaltplan und Layout
+- Gerber/Drill, Pick & place
+- Verschiedene Varianten für BOM
+- Interactive HTML zum Bestücken
+- 3D Modell (STEP, o.ä.)
+- Renderings 🖼
+- ...
+
+➜ [KiBot Dokumentation 🔗](https://github.com/INTI-CMNB/KiBot#the-outputs-section)
+
+![bg h:330 left:45%](img/kibot_740x400_logo.png)
 
 ---
 
+## Interactive HTML BOM plugin for KiCad [🔗](https://github.com/openscopeproject/InteractiveHtmlBom)
 
-## Bauteil-Matching 🧩
-- Automatisiert Bauteile mit Bauteildatenbank matchen
-  - ![h:25](img/partkeepr-logo.svg) PartKeepr oder ![h:25](img/partsbox-logo.png) PartsBox
+![h:520](img/ibom-plugin.png)
+
+😘😘😘
+
+---
+
+# Bauteil-Matching 🧩
+
+- Automatisierte Zuordnung von Bauteilen in Bauteildatenbank
+  ![h:25](img/partsbox-logo.png) PartsBox oder ![h:25](img/partkeepr-logo.svg) PartKeepr
 - Heuristik für Standard-Bauteile (Widerstände, Kondensatoren, LEDs, ...)
-- String-Matching mit MPN im Value-Feld
-- Report als PDF/HTML/Markdown generieren
-- CI Durchlauf nach Merge: BOM in Bauteildatenbank anlegen
+- Stringmatching: MPN im _Value_-Feld
+- Report als PDF/HTML/... generieren
+- Merge: Projekt/BOM in Bauteildatenbank automatisiert anlegen
 
 ---
-
-## Bauteil-Matching
 <!-- _class: non-inverted -->
 
-KiCad Python-Scripting 🔥
+# Bauteil-Matching 🧩
+
+🔥 KiCad Python-Scripting
 
 ```python
 #!/usr/bin/env python3
@@ -230,7 +255,7 @@ rev = str(board.GetTitleBlock().GetRevision())
 ```
 ---
 
-## Bauteildatenbank
+# Bauteildatenbank
 
 ![](img/partsbox-rca-leds.png)
 
@@ -240,7 +265,7 @@ Z.B.: `LED {color} {current rating} {package}`
 ---
 <!-- _class: non-inverted -->
 
-🔥🔥🔥
+# Bauteil-Matching 🔥🌈
 
 ```python
 for c im components:
@@ -268,12 +293,11 @@ for c im components:
 # ...
 ```
 
-
 ---
 
 # Vielen Dank für eure Aufmerksamkeit!
 
-### Fragen?
+## Fragen?
 
 ---
 
@@ -281,18 +305,20 @@ for c im components:
 
 ---
 
-## KiCad Libraries
-- 🥇 Qualitätsstandard übertrifft kommerzielle Bibliotheken um Größenordnungen
-- Aktuell ≥ 900 offene Merge-Requests für Symbole und Footprints 📚
-- 👎 Wechsel vom Github zu Gitlab am 01.10.2020
-  ➜ ≥ 500 Pull-Requests faktisch beerdigt
+# KiCad Libraries
+🥇 Qualitätsstandard übertrifft kommerzielle Bibliotheken um Größenordnungen
 
-#### Review-Prozess
-- 👥 Zu wenig Reviewer
-- Viel manueller Aufwand ⚙️
-  ➜ Mehr Automatisierung
+📈 Aktuell ≥ 900 offene Merge-Requests für Symbole und Footprints 📚
 
-**Wie können wir das langfristig besser machen? 🤔**
+👎 Wechsel vom Github zu Gitlab am 01.10.2020
+➜ ≥ 500 Pull-Requests faktisch beerdigt
+
+### Review-Prozess
+👥 Zu wenig Reviewer
+⚙️ Viel manueller Aufwand
+➜ Mehr Automatisierung
+
+**Wie können _wir_ das langfristig verbessern? 🤔**
 
 ---
 
@@ -315,8 +341,11 @@ for c im components:
 # 💡 Idee: KiCad Library Hackathon
 
 🔧 Tooling verbessern
+
 👶 KiCad Nutzer als Library-Maintainer gewinnen
+
 📚 Backlog an offenen PRs mit Symbolen und Footprints abarbeiten
+
 🌍 An mehreren Orten?
 
 ---
